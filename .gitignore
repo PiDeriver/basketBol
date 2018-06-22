@@ -1,0 +1,14 @@
+*.iml
+/.gradle/*
+/local.properties
+/.idea/*
+/gradle/*
+/2017TatorScoutTracingApp
+/build.gradle
+/gradle.properties
+/gradlew
+/settings.gradle
+.DS_Store
+/build/*
+/captures
+.externalNativeBuild

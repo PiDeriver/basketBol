@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_match_setup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.pideriver.a2017tatorscouttracingapp.MatchSetup">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sent Data to Stuart"
+        android:layout_alignParentBottom="true"
+        android:background="#FF0000"
+        android:textColor="#FFFFFF"
+        android:id="@+id/btnDataSent"/>
+
+    <ImageView
+        android:id="@+id/imgFieldSetup"
+        android:layout_width="450dp"
+        android:layout_height="500dp"
+        android:visibility="gone"
+        android:src="@drawable/edit_red_side"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radStartPos1"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="80dp"
+        android:visibility="gone"
+        android:layout_alignTop="@+id/imgFieldSetup"
+        android:layout_alignLeft="@+id/imgFieldSetup"
+        android:background="#7800d0ff"/>
+
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radStartPos2"
+        android:visibility="gone"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@+id/radStartPos1"
+        android:layout_toRightOf="@+id/radStartPos1"
+        android:background="#7800d0ff"/>
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radStartPos3"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"
+        android:layout_alignTop="@+id/radStartPos2"
+        android:layout_toRightOf="@+id/radStartPos2"
+        android:background="#7800d0ff"/>
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radStartPos4"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"
+        android:layout_alignTop="@+id/radStartPos3"
+        android:layout_toRightOf="@+id/radStartPos3"
+        android:background="#7800d0ff" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radStartPosExample"
+        android:text="Starting Positions"
+        android:visibility="gone"
+        android:checked="true"
+        android:background="#00d0ff"
+        />
+
+    <Spinner
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_alignParentRight="true"
+        android:id="@+id/spnTeamSpinner"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Scout Name"
+        android:textColor="#000000"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_alignLeft="@+id/ETscoutName"
+        android:id="@+id/scoutNameText"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Use this to change your username"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="-100dp"
+        android:layout_alignLeft="@+id/spnTeamSpinner"
+        android:id="@+id/ETscoutName" />
+
+    <Button
+        android:text="To Match"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnToAuto" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtRedOrBlue"
+        android:layout_alignLeft="@+id/spnTeamSpinner"
+        android:layout_marginLeft="-125dp"
+        android:textSize="20sp"
+        android:text="Red or Blue?"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_below="@+id/txtRedOrBlue"
+        android:layout_alignLeft="@+id/txtRedOrBlue"
+        android:layout_marginLeft="30dp"
+        android:textSize="20sp"
+        android:background="#ff0000"
+        android:text="        "/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_below="@+id/txtRedOrBlue"
+        android:layout_alignLeft="@+id/txtRedOrBlue"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="32dp"
+        android:textSize="20sp"
+        android:background="#0000ff"
+        android:text="        "/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtRedOrBlue"
+        android:layout_alignLeft="@+id/txtRedOrBlue"
+        android:id="@+id/rgpRedOrBlue">
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtRedOrBlue"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:id="@+id/radRed"
+            android:background="#ffffff"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radRed"
+            android:layout_marginRight="40dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/radBlue"
+            android:background="#ffffff"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Match Number"
+        android:textColor="#000000"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/radStartPosExample"
+        android:id="@+id/matchNumText"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Use This to change the Match Number"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/matchNumText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/matchNum" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speed of recording"
+        android:textColor="#000000"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/speedNumText"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/speedNumText"
+        android:layout_alignRight="@+id/speedNumText"
+        android:hint="1, 1.5, or 2 speed"
+        android:text=""
+        android:id="@+id/speedNum" />
+
+    <!--Additions for new reading of team name csv-->
+    <TextView
+        android:id="@+id/teamNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team Number"
+        android:textColor="#000000"
+        android:layout_below="@+id/matchNum" />
+
+    <EditText
+        android:id="@+id/teamName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_marginTop="10dp"
+        android:hint="Use \'Get Team Number\' Button or type in team #"
+        android:layout_below="@+id/teamNameText" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Team Number"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/teamName"
+        android:id="@+id/setTeam"
+        />
+
+</RelativeLayout>
